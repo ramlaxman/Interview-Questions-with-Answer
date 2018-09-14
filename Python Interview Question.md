@@ -12,7 +12,7 @@ The changes made in the original copy won’t affect any other copy that uses th
 Deep copy makes execution of the program slower due to making certain copies for each object that is been called.
 [Deep copy has to copy all the references , all the admin structures , all the values each and everything]
 
-
+```
 l1= [1,2,3,4]
 
 l2 = l1
@@ -49,8 +49,8 @@ l2
 
 l3
 [1,2,3,4,10,11]
-
-#### // To check the memory location
+ 
+# To check the memory location
 id(l1)
 
 id(l2)
@@ -59,7 +59,7 @@ l4 = copy.deepcopy(l2)
 
 l4
 [1,2,3,4,10]
-
+```
 
 #### Q2. What is the difference between list and tuples?
 
