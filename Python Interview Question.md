@@ -14,31 +14,49 @@ Deep copy makes execution of the program slower due to making certain copies for
 
 
 l1= [1,2,3,4]
+
 l2 = l1
+
 l2.append(10)
+
 l2
+
 [1,2,3,4,10]
+
 l1
+
 [1,2,3,4,10]
+
 import copy 
+
 l1
+
 [1,2,3,4,10]
+
 l3 = copy.copy(l1)
+
 l3
+
 [1,2,3,4,10]
+
 l3.append(11)
+
 l1
 [1,2,3,4,10]
+
 l2
 [1,2,3,4,10]
+
 l3
 [1,2,3,4,10,11]
 
-// To check the memory location
+#### // To check the memory location
 id(l1)
+
 id(l2)
 
 l4 = copy.deepcopy(l2)
+
 l4
 [1,2,3,4,10]
 
@@ -53,6 +71,7 @@ Tuple Syntax: tup_1 = (10, ‘Chelsea’ , 20)
 
 l1= [1,2,3,4]
 l1.append(40)  // is possible
+
 t1= (1,2,3,4)
 t1.append(40)  // is NOT possible
 
