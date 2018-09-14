@@ -1,4 +1,4 @@
-#Q1. What is the difference between shallow copy and deep copy ?
+#### Q1. What is the difference between shallow copy and deep copy ?
 
 Ans : Shallow copy is used when a new instance type gets created and it keeps the values that are copied in the new instance. 
 Shallow copy is used to copy the reference pointers just like it copies the values. These references point to the original objects
@@ -43,11 +43,7 @@ l4
 [1,2,3,4,10]
 
 
-
-
-
-
-#Q2. What is the difference between list and tuples?
+#### Q2. What is the difference between list and tuples?
 
 Ans: Lists are mutable i.e they can be edited. Tuples are immutable (tuples are lists which can’t be edited).
 Lists are slower than tuples.
@@ -61,12 +57,7 @@ t1= (1,2,3,4)
 t1.append(40)  // is NOT possible
 
 
-
-
-
-
-
-#Q3. How is Multithreading achieved in Python?
+#### Q3. How is Multithreading achieved in Python?
 
 Ans: Python has a multi-threading package but if you want to multi-thread to speed your code up, then it’s usually not a good idea to use it.
 Python has a construct called the Global Interpreter Lock (GIL). The GIL makes sure that only one of your ‘threads’ can execute at any one time. 
@@ -78,9 +69,7 @@ import multiprocessing
 import threading 
 
 
-
-
-#Q4. How can the ternary operators be used in python?
+#### Q4. How can the ternary operators be used in python?
 
 Ans: The Ternary operator is the operator that is used to show the conditional statements. 
 This consists of the true or false values with a statement that has to be evaluated for it.
@@ -91,10 +80,7 @@ big
 50
 
 
-
-
-
-#Q5. What is monkey patching in Python?
+#### Q5. What is monkey patching in Python?
 Ans: In Python, the term monkey patch only refers to dynamic modifications of a class or module at run-time.
 
 Consider the below example:
@@ -120,10 +106,7 @@ monkey_f()
 As we can see, we did make some changes in the behavior of f() in MyClass using the function we defined, monkey_f(), outside of the module m.
 
 
-
-
-
-#Q6. How can you randomize the items of a list in place in Python?
+#### Q6. How can you randomize the items of a list in place in Python?
 
 Ans: 
 from random import shuffle
@@ -134,8 +117,7 @@ print(x)
 
 
 
-
-#Q7. Write a sorting algorithm for a numerical dataset in Python.
+#### Q7. Write a sorting algorithm for a numerical dataset in Python.
 
 Ans: 
 
@@ -146,8 +128,7 @@ print (list)
 
 
 
-
-#Q8. Looking at the below code, write down the final values of A0, A1, …An.
+#### Q8. Looking at the below code, write down the final values of A0, A1, …An.
 A0 = dict(zip(('a','b','c','d','e'),(1,2,3,4,5)))
 A1 = range(10)A2 = sorted([i for i in A1 if i in A0])
 A3 = sorted([A0[s] for s in A0])
@@ -170,8 +151,7 @@ A6 = [[0, 0], [1, 1], [2, 4], [3, 9], [4, 16], [5, 25], [6, 36], [7, 49], [8, 64
 
 
 
-
-#Q9. Explain split(), sub(), subn() methods of “re” module in Python.
+#### Q9. Explain split(), sub(), subn() methods of “re” module in Python.
 
 Ans: To modify the strings, Python’s “re” module is providing 3 methods. They are:
 
@@ -183,11 +163,7 @@ import re
 // Example goes here .
 
 
-
-
-
-
-# Explain Inheritance in Python with an example.
+#### Q10. Explain Inheritance in Python with an example.
 
 Ans: Inheritance allows One class to gain all the members(say attributes and methods) of another class. Inheritance provides code reusability,
 makes it easier to create and maintain an application. The class from which we are inheriting is called super-class and the class 
