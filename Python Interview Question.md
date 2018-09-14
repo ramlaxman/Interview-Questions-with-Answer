@@ -6,9 +6,9 @@ and the changes made in any member of the class will also affect the original co
 and it depends on the size of the data that is used.
 [Shallow copy doesn't copy the admin structure, just copies the top level references and the original values ]
 
-Deep copy is used to store the values that are already copied. Deep copy doesnít copy the reference pointers to the objects. 
+Deep copy is used to store the values that are already copied. Deep copy doesn‚Äôt copy the reference pointers to the objects. 
 It makes the reference to an object and the new object that is pointed by some other object gets stored. 
-The changes made in the original copy wonít affect any other copy that uses the object. 
+The changes made in the original copy won‚Äôt affect any other copy that uses the object. 
 Deep copy makes execution of the program slower due to making certain copies for each object that is been called.
 [Deep copy has to copy all the references , all the admin structures , all the values each and everything]
 
@@ -49,10 +49,10 @@ l4
 
 #Q2. What is the difference between list and tuples?
 
-Ans: Lists are mutable i.e they can be edited. Tuples are immutable (tuples are lists which canít be edited).
+Ans: Lists are mutable i.e they can be edited. Tuples are immutable (tuples are lists which can‚Äôt be edited).
 Lists are slower than tuples.
-List Syntax: list_1 = [10, ëChelseaí, 20]	
-Tuple Syntax: tup_1 = (10, ëChelseaí , 20)
+List Syntax: list_1 = [10, ‚ÄòChelsea‚Äô, 20]	
+Tuple Syntax: tup_1 = (10, ‚ÄòChelsea‚Äô , 20)
 
 
 l1= [1,2,3,4]
@@ -68,11 +68,11 @@ t1.append(40)  // is NOT possible
 
 #Q3. How is Multithreading achieved in Python?
 
-Ans: Python has a multi-threading package but if you want to multi-thread to speed your code up, then itís usually not a good idea to use it.
-Python has a construct called the Global Interpreter Lock (GIL). The GIL makes sure that only one of your ëthreadsí can execute at any one time. 
+Ans: Python has a multi-threading package but if you want to multi-thread to speed your code up, then it‚Äôs usually not a good idea to use it.
+Python has a construct called the Global Interpreter Lock (GIL). The GIL makes sure that only one of your ‚Äòthreads‚Äô can execute at any one time. 
 A thread acquires the GIL, does a little work, then passes the GIL onto the next thread.
 This happens very quickly so to the human eye it may seem like your threads are executing in parallel, but they are really just taking turns using the same CPU core.
-All this GIL passing adds overhead to execution. This means that if you want to make your code run faster then using the threading package often isnít a good idea.
+All this GIL passing adds overhead to execution. This means that if you want to make your code run faster then using the threading package often isn‚Äôt a good idea.
 
 import multiprocessing 
 import threading 
@@ -147,7 +147,7 @@ print (list)
 
 
 
-#Q8. Looking at the below code, write down the final values of A0, A1, ÖAn.
+#Q8. Looking at the below code, write down the final values of A0, A1, ‚Ä¶An.
 A0 = dict(zip(('a','b','c','d','e'),(1,2,3,4,5)))
 A1 = range(10)A2 = sorted([i for i in A1 if i in A0])
 A3 = sorted([A0[s] for s in A0])
@@ -157,7 +157,7 @@ A6 = [[i,i*i] for i in A1]
 print(A0,A1,A2,A3,A4,A5,A6)
 
 
-Ans: The following will be the final outputs of A0, A1, Ö A6
+Ans: The following will be the final outputs of A0, A1, ‚Ä¶ A6
 
 A0 = {'a': 1, 'c': 3, 'b': 2, 'e': 5, 'd': 4} # the order may vary
 A1 = range(0, 10) 
@@ -171,13 +171,13 @@ A6 = [[0, 0], [1, 1], [2, 4], [3, 9], [4, 16], [5, 25], [6, 36], [7, 49], [8, 64
 
 
 
-#Q9. Explain split(), sub(), subn() methods of ìreî module in Python.
+#Q9. Explain split(), sub(), subn() methods of ‚Äúre‚Äù module in Python.
 
-Ans: To modify the strings, Pythonís ìreî module is providing 3 methods. They are:
+Ans: To modify the strings, Python‚Äôs ‚Äúre‚Äù module is providing 3 methods. They are:
 
-split() ñ uses a regex pattern to ìsplitî a given string into a list.
-sub() ñ finds all substrings where the regex pattern matches and then replace them with a different string
-subn() ñ it is similar to sub() and also returns the new string along with the no. of replacements.
+split() ‚Äì uses a regex pattern to ‚Äúsplit‚Äù a given string into a list.
+sub() ‚Äì finds all substrings where the regex pattern matches and then replace them with a different string
+subn() ‚Äì it is similar to sub() and also returns the new string along with the no. of replacements.
 
 import re 
 // Example goes here .
@@ -195,7 +195,7 @@ that is inherited is called a derived / child class.
 
 They are different types of inheritance supported by Python:-
 
-Single Inheritance ñ where a derived class acquires the members of a single super class.
-Multi-level inheritance ñ a derived class d1 in inherited from base class base1, and d2 are inherited from base2.
-Hierarchical inheritance ñ from one base class you can inherit any number of child classes
-Multiple inheritance ñ a derived class is inherited from more than one base class.
+Single Inheritance ‚Äì where a derived class acquires the members of a single super class.
+Multi-level inheritance ‚Äì a derived class d1 in inherited from base class base1, and d2 are inherited from base2.
+Hierarchical inheritance ‚Äì from one base class you can inherit any number of child classes
+Multiple inheritance ‚Äì a derived class is inherited from more than one base class.
